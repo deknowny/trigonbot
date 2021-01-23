@@ -63,6 +63,6 @@ def angle_via_sin(sin_value: int = vq.Float(min_=-1, max_=1)):
     }
 )
 def angle_via_cos(sin_value: float = vq.Float):
-    angle_value = math.cosh(sin_value)
+    angle_value = math.acos(sin_value)
     angle_value = math.degrees(angle_value)
     return f"Арккосинус {sin_value} равен {angle_value:.4f}\u00B0"

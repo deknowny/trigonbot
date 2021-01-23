@@ -1,0 +1,16 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "trigonbot"
+version = "1.0"
+description = "Bot for simple trignometry calcs"
+authors = ["Rhinik <deknowny@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dotenv = "^0.15.0"
+vkquick = {git = "https://github.com/deknowny/vkquick", rev = "1.0"}
+
+

@@ -58,11 +58,11 @@ def angle_via_sin(sin_value: int = vq.Float(min_=-1, max_=1)):
     use_regex_escape=False,
     crave_correct_arguments=False,
     on_invalid_argument={
-        "sin_value": "Передайте дробную часть значения косинуса,"
+        "cos_value": "Передайте дробную часть значения косинуса,"
                      " для которого нужно найти исходный угол"
     }
 )
-def angle_via_cos(sin_value: float = vq.Float):
-    angle_value = math.acos(sin_value)
+def angle_via_cos(cos_value: float = vq.Float):
+    angle_value = math.acos(cos_value)
     angle_value = math.degrees(angle_value)
-    return f"Арккосинус {sin_value} равен {angle_value:.4f}\u00B0"
+    return f"Арккосинус {cos_value} равен {angle_value:.4f}\u00B0"
